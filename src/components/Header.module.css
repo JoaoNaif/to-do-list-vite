@@ -1,0 +1,74 @@
+.header {
+    background: var(--gray-700);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue-300);
+    padding: 2.5rem 0;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.5rem;
+}
+
+.rocket {
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    color: var(--purple-600);
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    width: 50%;
+    position: absolute;
+    bottom: -1rem;
+}
+
+.input {
+    background: var(--gray-500);
+    color: var(--white);
+    flex: 1;
+    padding: .5rem;
+    border: 0;
+    border-radius: 8px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    background: var(--blue-600);
+    color: var(--white);
+    border: 0;
+    border-radius: 8px;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.plus {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .button {
+        border-radius: 50px;
+    }
+
+    .create {
+        display: none;
+    }
+}

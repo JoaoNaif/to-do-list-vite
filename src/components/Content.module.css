@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 0 1rem;
+    border-radius: 8px;
+    background: var(--gray-400);
+    color: var(--gray-100);
+    height: 4rem;
+    overflow: hidden;
+}
+
+.container + .container {
+    margin-top: 1rem;
+}
+
+.content {
+    flex: 1;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.25rem;
+    width: 1.25rem;
+    border: 1px solid var(--purple-600);
+    background: var(--purple-600);
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: background-color 1s;
+}
+
+.check:hover {
+    border: 1px solid var(--purple-300);
+    background: var(--purple-300);
+}
+
+.checkIcon {
+    font-size: .75rem;
+}
+
+.notCheck {
+    height: 1.25rem;
+    width: 1.25rem;
+    border: 1px solid var(--blue-300);
+    border-radius: 20px;
+    cursor: pointer;
+
+    transition: background-color 0.5s ease-in;
+}
+
+.notCheck:hover {
+    background: var(--gray-500);
+    border: 1px solid var(--blue-600);
+}
+
+.trash {
+    color: var(--gray-300);
+    cursor: pointer;
+}
+
+.trash:hover {
+    color: var(--red-200);
+}
+
+@media (max-width: 768px) {
+    .container {
+        overflow: auto;
+    }
+}

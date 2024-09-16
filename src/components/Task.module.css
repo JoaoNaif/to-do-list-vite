@@ -1,0 +1,27 @@
+.containerMain {
+    width: 100%;
+}
+
+.containerNull {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    align-items: center;
+    gap: .25rem;
+    border-top: 1px solid var(--gray-500);
+    font-size: .75rem;
+}
+
+.containerNull span {
+    color: var(--gray-200) ;
+}
+
+.clip {
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+    .containerNull {
+        text-align: center;
+    }
+}

@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.task, .completed {
+    display: flex;
+    gap: .5rem;
+}
+
+.task {
+    color: var(--blue-300);
+}
+
+.completed {
+    color: var(--purple-300);
+}
+
+.count {
+    background: var(--gray-400);
+    color: var(--gray-200);
+    border-radius: 8px;
+    padding: 0 .25rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: row;
+        gap: .75rem;
+    }
+}
